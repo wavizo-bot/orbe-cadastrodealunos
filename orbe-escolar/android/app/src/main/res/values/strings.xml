@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">orbe-escolar</string>
-    <string name="title_activity_main">orbe-escolar</string>
-    <string name="package_name">com.orbe.escolar</string>
-    <string name="custom_url_scheme">com.orbe.escolar</string>
-</resources>
