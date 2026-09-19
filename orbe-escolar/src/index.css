@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  /* Cores principais inspiradas no app original */
+  --primary: #0E7490;
+  --primary-dark: #0D5E77;
+  --secondary: #12365A;
+  --background: #F5F7FA;
+  --surface: #FFFFFF;
+  --text-primary: #173449;
+  --text-secondary: #617386;
+  --text-muted: #5C7181;
+  --border: #DCE7EF;
+  --success: #DDF5E6;
+  --success-border: #93CBA7;
+  --warning: #FFF2C9;
+  --warning-border: #E7C96C;
+  --danger: #B03939;
+  --danger-bg: #FFF4F4;
+  
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Estilos para etiquetas de conferência */
+.tag-neutral {
+  background-color: var(--surface);
+  border-color: var(--border);
+}
+
+.tag-checked {
+  background-color: var(--success);
+  border-color: var(--success-border);
+}
+
+.tag-pending {
+  background-color: var(--warning);
+  border-color: var(--warning-border);
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s ease-out;
+}
